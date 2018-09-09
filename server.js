@@ -6,7 +6,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false} ));
 //app.use(express.methodOverride());
 //app.use(bodyParser.json());
-var numlevels = 1;
+var numlevels = 2;
 
 app.use(function(req, res, next) {
    res.header("Access-Control-Allow-Origin", "http://localhost:8081");
