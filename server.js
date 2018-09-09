@@ -39,6 +39,7 @@ app.get("/wildfire/v1/level", function(req, res) {
         var statuscode=1
         if (err) throw err
         var all = JSON.parse(data);
+         numlevels=all.maps.length;
         for(var i = 0; i < all.maps.length; i++) {
             var obj2 = all.maps[i];
             if(obj2.num == req.query.level) {
